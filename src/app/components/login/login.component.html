@@ -1,0 +1,24 @@
+<form [formGroup]="userForm" class="login-form" (ngSubmit)="onSubmit()">
+  <mat-form-field hideRequiredMarker class="example-full-width" appearance="fill" name="username">
+    <mat-label>{{ usernameLabel }}</mat-label>
+    <input
+      formControlName="username"
+      matInput
+      [placeholder]="usernameLabel"
+      type="text"
+    />
+  </mat-form-field>
+
+  <mat-form-field hideRequiredMarker class="example-full-width" appearance="fill" name="password">
+    <mat-label>{{ passwordLabel }}</mat-label>
+    <input
+      formControlName="password"
+      matInput
+      [placeholder]="passwordLabel"
+      type="password"
+    />
+  </mat-form-field>
+  <button type="submit" color="primary" mat-raised-button color="primary">
+    {{ submitLabel }}
+  </button>
+</form>
