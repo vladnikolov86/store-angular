@@ -28,7 +28,6 @@ export class AppComponent {
           this.router.navigateByUrl(RoutingEnum.SELLER);
         }
       }
-      console.log(console.log(state));
     });
   }
 }

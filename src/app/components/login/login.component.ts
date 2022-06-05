@@ -6,6 +6,7 @@ import {
   Validators,
 } from '@angular/forms';
 import { LoginService } from 'src/app/services/login-service.service';
+import { NotificationService } from 'src/app/services/notification.service';
 
 @Component({
   selector: 'app-login',
@@ -19,11 +20,20 @@ export class LoginComponent implements OnInit {
   });
   usernameLabel: string = 'Username';
   passwordLabel: string = 'Password';
+  userLoggedIn: string = 'User logged in successfully';
+
+  incorrectLogin: string = 'User credentials are wrong';
   submitLabel: string = 'Submit';
+  sucessLabel: string = 'Success';
+  errorLabel: string = 'Error';
   username: string = '';
   password: string = '';
 
-  constructor(private fb: FormBuilder, private loginService: LoginService) {}
+  constructor(
+    private fb: FormBuilder,
+    private loginService: LoginService,
+    private notifications: NotificationService
+  ) {}
 
   ngOnInit(): void {
     this.userForm = this.fb.group({
@@ -33,13 +43,16 @@ export class LoginComponent implements OnInit {
   }
 
   onSubmit() {
-    if (this.userForm.valid) {
-      const userIsLogged = this.loginService.loginUser(
-        this.userForm.value.username,
-        this.userForm.value.password
-      );
-      console.log(userIsLogged);
+    if (!this.userForm.valid) {
+      return;
     }
-    console.log(this.userForm);
+    const userIsLogged = this.loginService.loginUser(
+      this.userForm.value.username,
+      this.userForm.value.password
+    );
+    if (userIsLogged) {
+      return this.notifications.open(this.userLoggedIn, this.sucessLabel);
+    }
+    this.notifications.open(this.incorrectLogin, this.errorLabel);
   }
 }

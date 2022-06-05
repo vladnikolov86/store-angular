@@ -9,6 +9,7 @@ import { StoreModule } from '@ngrx/store';
 //Services
 import OnlyLoggedInUsersGuard from './services/auth-guard.service';
 import { LoginService } from './services/login-service.service';
+import { NotificationService } from './services/notification.service';
 
 //Reducers
 import { rootReducer } from './store/root/root.reducer';
@@ -32,7 +33,7 @@ import { SellerComponent } from './components/seller/seller.component';
     CommonModule,
     StoreModule.forRoot({ rootReducer }),
   ],
-  providers: [OnlyLoggedInUsersGuard, LoginService],
+  providers: [OnlyLoggedInUsersGuard, LoginService, NotificationService],
   bootstrap: [AppComponent],
 })
 export class AppModule {}
