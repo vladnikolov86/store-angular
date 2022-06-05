@@ -1,9 +1,11 @@
 import { NgModule } from '@angular/core';
 
 //Modules
+import { MaterialModule } from './modules/material-module';
+
 import { AppRoutingModule } from './modules/app-routing.module';
 import { CommonModule } from './modules/common-module';
-import { MaterialModule } from './modules/material-module';
+
 import { StoreModule } from '@ngrx/store';
 
 //Services
@@ -19,6 +21,8 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/header/header.component';
 import { LoginComponent } from './components/login/login.component';
 import { SellerComponent } from './components/seller/seller.component';
+import { AdminComponent } from './components/admin/admin.component';
+import { ChartComponent } from './components/shared/chart/chart.component';
 
 @NgModule({
   declarations: [
@@ -26,11 +30,13 @@ import { SellerComponent } from './components/seller/seller.component';
     HeaderComponent,
     LoginComponent,
     SellerComponent,
+    AdminComponent,
+    ChartComponent
   ],
   imports: [
-    AppRoutingModule,
-    MaterialModule,
     CommonModule,
+    MaterialModule,
+    AppRoutingModule,
     StoreModule.forRoot({ rootReducer }),
   ],
   providers: [OnlyLoggedInUsersGuard, LoginService, NotificationService],

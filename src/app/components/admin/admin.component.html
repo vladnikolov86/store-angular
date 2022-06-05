@@ -1,5 +1,26 @@
-<mat-tab-group>
-  <mat-tab [label]="tabSeller">Content 1</mat-tab>
-  <mat-tab [label]="tabBuyers">Content 2</mat-tab>
-  <mat-tab [label]="tabItems">Content 3</mat-tab>
+<mat-tab-group (selectedTabChange)="tabChanged($event)">
+  <mat-tab [label]="tabSeller">
+    <div class="chart-container" *ngIf="tabCurrentIndex == 0">
+      <canvas [id]="sellerConfig.id" width="400px" height="400px"></canvas>
+      <app-chart
+        [isPercentage]="sellerConfig.isPercentage"
+        [chartId]="sellerConfig.id"
+        [labels]="sellerConfig.labels"
+        [values]="sellerConfig.values"
+        [prefix]="sellerConfig.prefix"
+      ></app-chart>
+    </div>
+  </mat-tab>
+  <mat-tab [label]="tabBuyers">
+    <div class="chart-container" *ngIf="tabCurrentIndex === 1">
+      <canvas [id]="bueyrsConfig.id" width="400px" height="400px"></canvas>
+      <app-chart
+        [isPercentage]="bueyrsConfig.isPercentage"
+        [chartId]="bueyrsConfig.id"
+        [labels]="bueyrsConfig.labels"
+        [values]="bueyrsConfig.values"
+        [suffix]="bueyrsConfig.suffix"
+      ></app-chart></div
+  ></mat-tab>
+  <mat-tab [label]="tabItems"> Content 3 </mat-tab>
 </mat-tab-group>

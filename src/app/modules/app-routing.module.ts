@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { AppComponent } from '../app.component';
+import { AdminComponent } from '../components/admin/admin.component';
 import { LoginComponent } from '../components/login/login.component';
 import { SellerComponent } from '../components/seller/seller.component';
 import { UserRoleEnum } from '../models/UserRole.enum';
@@ -24,6 +25,13 @@ const routes: Routes = [
     component: SellerComponent,
     canActivate: [OnlyLoggedInUsersGuard],
     data: { role: UserRoleEnum.SELLER },
+  },
+  {
+    path: 'admin',
+    pathMatch: 'full',
+    component: AdminComponent,
+    canActivate: [OnlyLoggedInUsersGuard],
+    data: { role: UserRoleEnum.ADMIN },
   },
 ];
 
