@@ -14,6 +14,7 @@
       <mat-paginator
         [disabled]="numberOfItems < 10"
         [length]="numberOfItems"
+        [pageIndex]="currentPage"
         [pageSize]="10"
         [hidePageSize]="true"
         (page)="handlePage($event)"

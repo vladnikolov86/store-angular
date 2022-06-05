@@ -56,6 +56,7 @@ export class SellerComponent implements OnInit {
   tabChanged = (tabChangeEvent: MatTabChangeEvent): void => {
     this.tabCurrentIndex = tabChangeEvent.index;
     if (this.tabCurrentIndex == 1) {
+      this.currentPage = 0;
       this.fetchProducts.getProducts().subscribe((data: ProductEntity[]) => {
         this.numberOfItems = data.length;
         this.allItems = data;
