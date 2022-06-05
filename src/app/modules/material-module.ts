@@ -6,7 +6,8 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatButtonModule } from '@angular/material/button';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { MatTabsModule } from '@angular/material/tabs';
-
+import { MatTableModule } from '@angular/material/table';
+import { MatSortModule } from '@angular/material/sort';
 
 @NgModule({
   imports: [
@@ -16,7 +17,9 @@ import { MatTabsModule } from '@angular/material/tabs';
     MatInputModule,
     MatButtonModule,
     MatSnackBarModule,
-    MatTabsModule
+    MatTabsModule,
+    MatTableModule,
+    MatSortModule
   ],
   exports: [
     MatToolbarModule,
@@ -25,7 +28,9 @@ import { MatTabsModule } from '@angular/material/tabs';
     MatInputModule,
     MatButtonModule,
     MatSnackBarModule,
-    MatTabsModule
+    MatTabsModule,
+    MatTableModule,
+    MatSortModule
   ],
 })
 export class MaterialModule {}

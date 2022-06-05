@@ -22,7 +22,8 @@ import { HeaderComponent } from './components/header/header.component';
 import { LoginComponent } from './components/login/login.component';
 import { SellerComponent } from './components/seller/seller.component';
 import { AdminComponent } from './components/admin/admin.component';
-import { ChartComponent } from './components/shared/chart/chart.component';
+import { CanvasWrapComponent } from './components/shared/canvas-wrap/canvas-wrap.component';
+import { ChartInitializerService } from './services/chart-initializer.service';
 
 @NgModule({
   declarations: [
@@ -31,7 +32,7 @@ import { ChartComponent } from './components/shared/chart/chart.component';
     LoginComponent,
     SellerComponent,
     AdminComponent,
-    ChartComponent
+    CanvasWrapComponent,
   ],
   imports: [
     CommonModule,
@@ -39,7 +40,12 @@ import { ChartComponent } from './components/shared/chart/chart.component';
     AppRoutingModule,
     StoreModule.forRoot({ rootReducer }),
   ],
-  providers: [OnlyLoggedInUsersGuard, LoginService, NotificationService],
+  providers: [
+    OnlyLoggedInUsersGuard,
+    LoginService,
+    NotificationService,
+    ChartInitializerService,
+  ],
   bootstrap: [AppComponent],
 })
 export class AppModule {}

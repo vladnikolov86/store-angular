@@ -1,4 +1,4 @@
-import { Component, AfterViewInit, Input } from '@angular/core';
+import { Injectable } from '@angular/core';
 import {
   Chart,
   LinearScale,
@@ -8,19 +8,18 @@ import {
   PieController,
   Tooltip,
 } from 'chart.js';
-
-@Component({
-  selector: 'app-chart',
-  templateUrl: './chart.component.html',
-  styleUrls: ['./chart.component.css'],
+export interface IChartConfig {
+  id: string;
+  labels: string[];
+  values: number[];
+  prefix: string;
+  suffix: string;
+  isPercentage: boolean;
+}
+@Injectable({
+  providedIn: 'root',
 })
-export class ChartComponent implements AfterViewInit {
-  @Input() chartId = '';
-  @Input() prefix = '';
-  @Input() suffix = '';
-  @Input() isPercentage = false;
-  @Input() labels: string[] = [];
-  @Input() values: number[] = [];
+export class ChartInitializerService {
   constructor() {
     Chart.register(
       LinearScale,
@@ -32,18 +31,18 @@ export class ChartComponent implements AfterViewInit {
     );
   }
 
-  ngAfterViewInit(): void {
+  showChart(config: IChartConfig) {
     const canvasElement = document.getElementById(
-      this.chartId
+      config.id
     )! as HTMLCanvasElement;
     const ctx = canvasElement.getContext('2d') as CanvasRenderingContext2D;
     new Chart(ctx, {
       type: 'pie',
       data: {
-        labels: this.labels,
+        labels: config.labels,
         datasets: [
           {
-            data: this.values,
+            data: config.values,
             backgroundColor: [
               'rgba(255, 99, 132, 0.2)',
               'rgba(54, 162, 235, 0.2)',
@@ -72,10 +71,10 @@ export class ChartComponent implements AfterViewInit {
             enabled: true,
             callbacks: {
               label: (context) => {
-                const prefix = this.prefix ? `${this.prefix} ` : '';
-                const suffix = this.suffix ? ` ${this.suffix}` : '';
+                const prefix = config.prefix ? `${config.prefix} ` : '';
+                const suffix = config.suffix ? ` ${config.suffix}` : '';
                 let label = `${prefix}${context.label} ${context.parsed}${
-                  this.isPercentage ? '%' : ''
+                  config.isPercentage ? '%' : ''
                 }${suffix}`;
 
                 return label;

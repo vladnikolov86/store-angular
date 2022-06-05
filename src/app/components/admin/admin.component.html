@@ -1,26 +1,80 @@
 <mat-tab-group (selectedTabChange)="tabChanged($event)">
   <mat-tab [label]="tabSeller">
-    <div class="chart-container" *ngIf="tabCurrentIndex == 0">
-      <canvas [id]="sellerConfig.id" width="400px" height="400px"></canvas>
-      <app-chart
-        [isPercentage]="sellerConfig.isPercentage"
-        [chartId]="sellerConfig.id"
-        [labels]="sellerConfig.labels"
-        [values]="sellerConfig.values"
-        [prefix]="sellerConfig.prefix"
-      ></app-chart>
+    <div class="chart-container" *ngIf="tabCurrentIndex === 0">
+      <app-canvas-wrap [chartConfig]="sellerConfig"></app-canvas-wrap>
     </div>
   </mat-tab>
   <mat-tab [label]="tabBuyers">
     <div class="chart-container" *ngIf="tabCurrentIndex === 1">
-      <canvas [id]="bueyrsConfig.id" width="400px" height="400px"></canvas>
-      <app-chart
-        [isPercentage]="bueyrsConfig.isPercentage"
-        [chartId]="bueyrsConfig.id"
-        [labels]="bueyrsConfig.labels"
-        [values]="bueyrsConfig.values"
-        [suffix]="bueyrsConfig.suffix"
-      ></app-chart></div
-  ></mat-tab>
-  <mat-tab [label]="tabItems"> Content 3 </mat-tab>
+      <app-canvas-wrap [chartConfig]="bueyrsConfig"></app-canvas-wrap>
+    </div>
+  </mat-tab>
+  <mat-tab [label]="tabItems">
+    <table mat-table [dataSource]="dataSource" matSort class="mat-elevation-z8">
+      <!-- Id Column -->
+      <ng-container matColumnDef="id">
+        <th
+          mat-header-cell
+          *matHeaderCellDef
+          mat-sort-header
+          sortActionDescription="Sort by id"
+        >
+          ID
+        </th>
+        <td mat-cell *matCellDef="let element">{{ element.id }}</td>
+      </ng-container>
+
+      <!-- Name Column -->
+      <ng-container matColumnDef="name">
+        <th
+          mat-header-cell
+          *matHeaderCellDef
+          mat-sort-header
+          sortActionDescription="Sort by name"
+        >
+          Name
+        </th>
+        <td mat-cell *matCellDef="let element">{{ element.name }}</td>
+      </ng-container>
+
+      <!-- Price Column -->
+      <ng-container matColumnDef="price">
+        <th
+          mat-header-cell
+          *matHeaderCellDef
+          mat-sort-header
+          sortActionDescription="Sort by price"
+        >
+          Price
+        </th>
+        <td mat-cell *matCellDef="let element">{{ element.price }}</td>
+      </ng-container>
+
+      <!-- Rating Column -->
+      <ng-container matColumnDef="rating">
+        <th
+          mat-header-cell
+          *matHeaderCellDef
+          mat-sort-header
+          sortActionDescription="Sort by rating"
+        >
+          Rating
+        </th>
+        <td mat-cell *matCellDef="let element">{{ element.rating }}</td>
+      </ng-container>
+      <ng-container matColumnDef="manufacturer">
+        <th
+          mat-header-cell
+          *matHeaderCellDef
+          mat-sort-header
+          sortActionDescription="Sort by manufacturer"
+        >
+          Manufacturer
+        </th>
+        <td mat-cell *matCellDef="let element">{{ element.manufacturer }}</td>
+      </ng-container>
+      <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+      <tr mat-row *matRowDef="let row; columns: displayedColumns"></tr>
+    </table>
+  </mat-tab>
 </mat-tab-group>
