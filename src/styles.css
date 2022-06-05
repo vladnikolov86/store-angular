@@ -1,6 +1,11 @@
 /* You can add global styles to this file, and also import other style files */
 :root {
+  --white: #fff;
   --main-bg-color: #eee;
+  --padding-containers: 7px;
+  --header-height: 64px;
+  --items-gap: 15px;
+  --border-radius: 5px;
 }
 body {
   background-color: var(--main-bg-color);

@@ -1,1 +1,24 @@
-<p>seller works!</p>
+<mat-tab-group (selectedTabChange)="tabChanged($event)">
+  <mat-tab [label]="tabTop">
+    <div class="chart-container" *ngIf="tabCurrentIndex === 0">
+      <app-canvas-wrap [chartConfig]="topItemsSoldConfig"></app-canvas-wrap>
+    </div>
+  </mat-tab>
+  <mat-tab [label]="tabAllProducts">
+    <div class="tile-view-wrap">
+      <div class="tile-view-inner">
+        <div class="productWrap" *ngFor="let product of productEntities">
+          <app-product-item [product]="product"></app-product-item>
+        </div>
+      </div>
+      <mat-paginator
+        [disabled]="productEntities.length < 10"
+        [length]="productEntities.length"
+        [pageSize]="10"
+        [hidePageSize]="true"
+        aria-label="Select page"
+      >
+      </mat-paginator>
+    </div>
+  </mat-tab>
+</mat-tab-group>

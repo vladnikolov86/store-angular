@@ -85,10 +85,8 @@ export class AdminComponent implements AfterViewInit {
   tabBuyers = 'Top 10 Buyers';
   tabItems = 'Top 10 Items sold today';
   tabCurrentIndex = 0;
-  chartViewLoaded = false;
   sellerConfig = {
     id: 'sellersChart',
-    index: 0,
     prefix: 'Team',
     isPercentage: true,
     labels: ['Burgas', 'Sofia', 'Plovdiv', 'Ruse'],
@@ -96,7 +94,6 @@ export class AdminComponent implements AfterViewInit {
     suffix: '',
   };
   bueyrsConfig = {
-    index: 1,
     id: 'buyersChart',
     isPercentage: false,
     labels: ['Microsoft', 'Google', 'Apple', 'Amazon'],
@@ -120,14 +117,10 @@ export class AdminComponent implements AfterViewInit {
 
   tabChanged = (tabChangeEvent: MatTabChangeEvent): void => {
     this.tabCurrentIndex = tabChangeEvent.index;
-    this.chartViewLoaded = false;
   };
 
   ngAfterViewInit(): void {
     this.dataSource.sort = this.sort;
   }
 
-  changeTabIndex() {
-    this.chartViewLoaded = true;
-  }
 }

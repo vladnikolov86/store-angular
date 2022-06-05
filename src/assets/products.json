@@ -1,0 +1,802 @@
+[
+  {
+    "id": 0,
+    "price": 758,
+    "name": "AnotherBlackberry",
+    "manufacturer": "BlackBerry",
+    "rating": 2,
+    "image": "https://m.media-amazon.com/images/I/81GwnUe7M3L._AC_SL1500_.jpg"
+  },
+  {
+    "id": 1,
+    "price": 205,
+    "name": "5t",
+    "manufacturer": "OnePlus",
+    "rating": 3,
+    "image": "https://5.imimg.com/data5/SELLER/Default/2021/6/UZ/SM/XI/18726985/1-m00-25-d4-rb8bwmcruwyarg44aaynxfflaji376-840-840-500x500.png"
+  },
+  {
+    "id": 2,
+    "price": 820,
+    "name": "2200",
+    "manufacturer": "Nokia",
+    "rating": 4,
+    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/products/521635-Product-0-I-637570202491673303.jpg?v=1621392189"
+  },
+  {
+    "id": 3,
+    "price": 564,
+    "name": "BlackberryModel",
+    "manufacturer": "BlackBerry",
+    "rating": 5,
+    "image": "https://m.media-amazon.com/images/I/81GwnUe7M3L._AC_SL1500_.jpg"
+  },
+  {
+    "id": 4,
+    "price": 285,
+    "name": "BlackberryModel",
+    "manufacturer": "BlackBerry",
+    "rating": 2,
+    "image": "https://ae01.alicdn.com/kf/H921dc18e3f594d77a4893c1482684322o/Original-Blackberry-9700-WCDMA-3G-3-2MP-256MB-RAM-1500mAh-GPS-WIFI-Bluetooth-GPS-Unlocked-Used.jpg_Q90.jpg_.webp"
+  },
+  {
+    "id": 5,
+    "price": 213,
+    "name": "8t",
+    "manufacturer": "OnePlus",
+    "rating": 2,
+    "image": "https://5.imimg.com/data5/SELLER/Default/2021/6/UZ/SM/XI/18726985/1-m00-25-d4-rb8bwmcruwyarg44aaynxfflaji376-840-840-500x500.png"
+  },
+  {
+    "id": 6,
+    "price": 283,
+    "name": "S8",
+    "manufacturer": "Samsung",
+    "rating": 5,
+    "image": "https://images.samsung.com/is/image/samsung/p6pim/bg/2202/gallery/bg-galaxy-a53-5g-a536-sm-a536blbneue-531386714?$1300_1038_PNG$"
+  },
+  {
+    "id": 7,
+    "price": 202,
+    "name": "5t",
+    "manufacturer": "OnePlus",
+    "rating": 1,
+    "image": "https://5.imimg.com/data5/SELLER/Default/2021/6/UZ/SM/XI/18726985/1-m00-25-d4-rb8bwmcruwyarg44aaynxfflaji376-840-840-500x500.png"
+  },
+  {
+    "id": 8,
+    "price": 462,
+    "name": "7t",
+    "manufacturer": "OnePlus",
+    "rating": 4,
+    "image": "https://media.router-switch.com/media/catalog/product/cache/b90fceee6a5fa7acd36a04c7b968181c/o/n/oneplus-9-5g.jpg"
+  },
+  {
+    "id": 9,
+    "price": 301,
+    "name": "S7",
+    "manufacturer": "Samsung",
+    "rating": 1,
+    "image": "https://images-na.ssl-images-amazon.com/images/I/61Dy9hZJ4ML.__AC_SX300_SY300_QL70_FMwebp_.jpg"
+  },
+  {
+    "id": 10,
+    "price": 611,
+    "name": "s10",
+    "manufacturer": "Samsung",
+    "rating": 5,
+    "image": "https://images-na.ssl-images-amazon.com/images/I/61Dy9hZJ4ML.__AC_SX300_SY300_QL70_FMwebp_.jpg"
+  },
+  {
+    "id": 11,
+    "price": 768,
+    "name": "7t",
+    "manufacturer": "OnePlus",
+    "rating": 5,
+    "image": "https://5.imimg.com/data5/SELLER/Default/2021/6/UZ/SM/XI/18726985/1-m00-25-d4-rb8bwmcruwyarg44aaynxfflaji376-840-840-500x500.png"
+  },
+  {
+    "id": 12,
+    "price": 271,
+    "name": "3310",
+    "manufacturer": "Nokia",
+    "rating": 5,
+    "image": "https://m.media-amazon.com/images/I/81sQxjJBn1L._AC_SL1500_.jpg"
+  },
+  {
+    "id": 13,
+    "price": 671,
+    "name": "AnotherBlackberry",
+    "manufacturer": "BlackBerry",
+    "rating": 4,
+    "image": "https://m.media-amazon.com/images/I/81GwnUe7M3L._AC_SL1500_.jpg"
+  },
+  {
+    "id": 14,
+    "price": 794,
+    "name": "2200",
+    "manufacturer": "Nokia",
+    "rating": 5,
+    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/products/521635-Product-0-I-637570202491673303.jpg?v=1621392189"
+  },
+  {
+    "id": 15,
+    "price": 603,
+    "name": "3310",
+    "manufacturer": "Nokia",
+    "rating": 3,
+    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/products/521635-Product-0-I-637570202491673303.jpg?v=1621392189"
+  },
+  {
+    "id": 16,
+    "price": 863,
+    "name": "7t",
+    "manufacturer": "OnePlus",
+    "rating": 5,
+    "image": "https://5.imimg.com/data5/SELLER/Default/2021/6/UZ/SM/XI/18726985/1-m00-25-d4-rb8bwmcruwyarg44aaynxfflaji376-840-840-500x500.png"
+  },
+  {
+    "id": 17,
+    "price": 366,
+    "name": "BlackberryModel",
+    "manufacturer": "BlackBerry",
+    "rating": 2,
+    "image": "https://ae01.alicdn.com/kf/H921dc18e3f594d77a4893c1482684322o/Original-Blackberry-9700-WCDMA-3G-3-2MP-256MB-RAM-1500mAh-GPS-WIFI-Bluetooth-GPS-Unlocked-Used.jpg_Q90.jpg_.webp"
+  },
+  {
+    "id": 18,
+    "price": 403,
+    "name": "5t",
+    "manufacturer": "OnePlus",
+    "rating": 2,
+    "image": "https://media.router-switch.com/media/catalog/product/cache/b90fceee6a5fa7acd36a04c7b968181c/o/n/oneplus-9-5g.jpg"
+  },
+  {
+    "id": 19,
+    "price": 943,
+    "name": "S8",
+    "manufacturer": "Samsung",
+    "rating": 5,
+    "image": "https://images-na.ssl-images-amazon.com/images/I/61Dy9hZJ4ML.__AC_SX300_SY300_QL70_FMwebp_.jpg"
+  },
+  {
+    "id": 20,
+    "price": 878,
+    "name": "8t",
+    "manufacturer": "OnePlus",
+    "rating": 5,
+    "image": "https://media.router-switch.com/media/catalog/product/cache/b90fceee6a5fa7acd36a04c7b968181c/o/n/oneplus-9-5g.jpg"
+  },
+  {
+    "id": 21,
+    "price": 347,
+    "name": "Lumia",
+    "manufacturer": "Nokia",
+    "rating": 3,
+    "image": "https://m.media-amazon.com/images/I/81sQxjJBn1L._AC_SL1500_.jpg"
+  },
+  {
+    "id": 22,
+    "price": 337,
+    "name": "3310",
+    "manufacturer": "Nokia",
+    "rating": 3,
+    "image": "https://m.media-amazon.com/images/I/81sQxjJBn1L._AC_SL1500_.jpg"
+  },
+  {
+    "id": 23,
+    "price": 982,
+    "name": "X",
+    "manufacturer": "Apple",
+    "rating": 2,
+    "image": "https://s13emagst.akamaized.net/products/40685/40684428/images/res_0527b4f237cdaab2544c0f8e58980ac9.jpg"
+  },
+  {
+    "id": 24,
+    "price": 990,
+    "name": "BlackberryModel",
+    "manufacturer": "BlackBerry",
+    "rating": 2,
+    "image": "https://m.media-amazon.com/images/I/81GwnUe7M3L._AC_SL1500_.jpg"
+  },
+  {
+    "id": 25,
+    "price": 906,
+    "name": "3310",
+    "manufacturer": "Nokia",
+    "rating": 5,
+    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/products/521635-Product-0-I-637570202491673303.jpg?v=1621392189"
+  },
+  {
+    "id": 26,
+    "price": 284,
+    "name": "s10",
+    "manufacturer": "Samsung",
+    "rating": 3,
+    "image": "https://images-na.ssl-images-amazon.com/images/I/61Dy9hZJ4ML.__AC_SX300_SY300_QL70_FMwebp_.jpg"
+  },
+  {
+    "id": 27,
+    "price": 936,
+    "name": "5t",
+    "manufacturer": "OnePlus",
+    "rating": 1,
+    "image": "https://media.router-switch.com/media/catalog/product/cache/b90fceee6a5fa7acd36a04c7b968181c/o/n/oneplus-9-5g.jpg"
+  },
+  {
+    "id": 28,
+    "price": 901,
+    "name": "6t",
+    "manufacturer": "OnePlus",
+    "rating": 5,
+    "image": "https://5.imimg.com/data5/SELLER/Default/2021/6/UZ/SM/XI/18726985/1-m00-25-d4-rb8bwmcruwyarg44aaynxfflaji376-840-840-500x500.png"
+  },
+  {
+    "id": 29,
+    "price": 549,
+    "name": "2200",
+    "manufacturer": "Nokia",
+    "rating": 1,
+    "image": "https://m.media-amazon.com/images/I/81sQxjJBn1L._AC_SL1500_.jpg"
+  },
+  {
+    "id": 30,
+    "price": 356,
+    "name": "6t",
+    "manufacturer": "OnePlus",
+    "rating": 5,
+    "image": "https://5.imimg.com/data5/SELLER/Default/2021/6/UZ/SM/XI/18726985/1-m00-25-d4-rb8bwmcruwyarg44aaynxfflaji376-840-840-500x500.png"
+  },
+  {
+    "id": 31,
+    "price": 681,
+    "name": "s9",
+    "manufacturer": "Samsung",
+    "rating": 1,
+    "image": "https://images.samsung.com/is/image/samsung/p6pim/bg/2202/gallery/bg-galaxy-a53-5g-a536-sm-a536blbneue-531386714?$1300_1038_PNG$"
+  },
+  {
+    "id": 32,
+    "price": 837,
+    "name": "7t",
+    "manufacturer": "OnePlus",
+    "rating": 4,
+    "image": "https://media.router-switch.com/media/catalog/product/cache/b90fceee6a5fa7acd36a04c7b968181c/o/n/oneplus-9-5g.jpg"
+  },
+  {
+    "id": 33,
+    "price": 941,
+    "name": "8t",
+    "manufacturer": "OnePlus",
+    "rating": 5,
+    "image": "https://5.imimg.com/data5/SELLER/Default/2021/6/UZ/SM/XI/18726985/1-m00-25-d4-rb8bwmcruwyarg44aaynxfflaji376-840-840-500x500.png"
+  },
+  {
+    "id": 34,
+    "price": 818,
+    "name": "5t",
+    "manufacturer": "OnePlus",
+    "rating": 5,
+    "image": "https://5.imimg.com/data5/SELLER/Default/2021/6/UZ/SM/XI/18726985/1-m00-25-d4-rb8bwmcruwyarg44aaynxfflaji376-840-840-500x500.png"
+  },
+  {
+    "id": 35,
+    "price": 633,
+    "name": "6s",
+    "manufacturer": "Apple",
+    "rating": 3,
+    "image": "https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/iphone-13-pro-family-hero?wid=940&hei=1112&fmt=png-alpha&.v=1644969385433"
+  },
+  {
+    "id": 36,
+    "price": 398,
+    "name": "5t",
+    "manufacturer": "OnePlus",
+    "rating": 3,
+    "image": "https://media.router-switch.com/media/catalog/product/cache/b90fceee6a5fa7acd36a04c7b968181c/o/n/oneplus-9-5g.jpg"
+  },
+  {
+    "id": 37,
+    "price": 438,
+    "name": "5s",
+    "manufacturer": "Apple",
+    "rating": 4,
+    "image": "https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/iphone-13-pro-family-hero?wid=940&hei=1112&fmt=png-alpha&.v=1644969385433"
+  },
+  {
+    "id": 38,
+    "price": 529,
+    "name": "s10",
+    "manufacturer": "Samsung",
+    "rating": 3,
+    "image": "https://images-na.ssl-images-amazon.com/images/I/61Dy9hZJ4ML.__AC_SX300_SY300_QL70_FMwebp_.jpg"
+  },
+  {
+    "id": 39,
+    "price": 482,
+    "name": "Lumia",
+    "manufacturer": "Nokia",
+    "rating": 1,
+    "image": "https://m.media-amazon.com/images/I/81sQxjJBn1L._AC_SL1500_.jpg"
+  },
+  {
+    "id": 40,
+    "price": 771,
+    "name": "5t",
+    "manufacturer": "OnePlus",
+    "rating": 5,
+    "image": "https://5.imimg.com/data5/SELLER/Default/2021/6/UZ/SM/XI/18726985/1-m00-25-d4-rb8bwmcruwyarg44aaynxfflaji376-840-840-500x500.png"
+  },
+  {
+    "id": 41,
+    "price": 725,
+    "name": "5s",
+    "manufacturer": "Apple",
+    "rating": 3,
+    "image": "https://s13emagst.akamaized.net/products/40685/40684428/images/res_0527b4f237cdaab2544c0f8e58980ac9.jpg"
+  },
+  {
+    "id": 42,
+    "price": 860,
+    "name": "3310",
+    "manufacturer": "Nokia",
+    "rating": 2,
+    "image": "https://m.media-amazon.com/images/I/81sQxjJBn1L._AC_SL1500_.jpg"
+  },
+  {
+    "id": 43,
+    "price": 927,
+    "name": "3310",
+    "manufacturer": "Nokia",
+    "rating": 2,
+    "image": "https://m.media-amazon.com/images/I/81sQxjJBn1L._AC_SL1500_.jpg"
+  },
+  {
+    "id": 44,
+    "price": 447,
+    "name": "S7",
+    "manufacturer": "Samsung",
+    "rating": 1,
+    "image": "https://images.samsung.com/is/image/samsung/p6pim/bg/2202/gallery/bg-galaxy-a53-5g-a536-sm-a536blbneue-531386714?$1300_1038_PNG$"
+  },
+  {
+    "id": 45,
+    "price": 488,
+    "name": "AnotherBlackberry",
+    "manufacturer": "BlackBerry",
+    "rating": 4,
+    "image": "https://m.media-amazon.com/images/I/81GwnUe7M3L._AC_SL1500_.jpg"
+  },
+  {
+    "id": 46,
+    "price": 983,
+    "name": "S8",
+    "manufacturer": "Samsung",
+    "rating": 2,
+    "image": "https://images-na.ssl-images-amazon.com/images/I/61Dy9hZJ4ML.__AC_SX300_SY300_QL70_FMwebp_.jpg"
+  },
+  {
+    "id": 47,
+    "price": 486,
+    "name": "s10",
+    "manufacturer": "Samsung",
+    "rating": 4,
+    "image": "https://images-na.ssl-images-amazon.com/images/I/61Dy9hZJ4ML.__AC_SX300_SY300_QL70_FMwebp_.jpg"
+  },
+  {
+    "id": 48,
+    "price": 756,
+    "name": "X11",
+    "manufacturer": "Apple",
+    "rating": 5,
+    "image": "https://s13emagst.akamaized.net/products/40685/40684428/images/res_0527b4f237cdaab2544c0f8e58980ac9.jpg"
+  },
+  {
+    "id": 49,
+    "price": 317,
+    "name": "6s",
+    "manufacturer": "Apple",
+    "rating": 5,
+    "image": "https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/iphone-13-pro-family-hero?wid=940&hei=1112&fmt=png-alpha&.v=1644969385433"
+  },
+  {
+    "id": 50,
+    "price": 636,
+    "name": "X11",
+    "manufacturer": "Apple",
+    "rating": 1,
+    "image": "https://s13emagst.akamaized.net/products/40685/40684428/images/res_0527b4f237cdaab2544c0f8e58980ac9.jpg"
+  },
+  {
+    "id": 51,
+    "price": 363,
+    "name": "BlackberryModel",
+    "manufacturer": "BlackBerry",
+    "rating": 4,
+    "image": "https://m.media-amazon.com/images/I/81GwnUe7M3L._AC_SL1500_.jpg"
+  },
+  {
+    "id": 52,
+    "price": 398,
+    "name": "2200",
+    "manufacturer": "Nokia",
+    "rating": 3,
+    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/products/521635-Product-0-I-637570202491673303.jpg?v=1621392189"
+  },
+  {
+    "id": 53,
+    "price": 452,
+    "name": "s10",
+    "manufacturer": "Samsung",
+    "rating": 1,
+    "image": "https://images.samsung.com/is/image/samsung/p6pim/bg/2202/gallery/bg-galaxy-a53-5g-a536-sm-a536blbneue-531386714?$1300_1038_PNG$"
+  },
+  {
+    "id": 54,
+    "price": 221,
+    "name": "s9",
+    "manufacturer": "Samsung",
+    "rating": 4,
+    "image": "https://images-na.ssl-images-amazon.com/images/I/61Dy9hZJ4ML.__AC_SX300_SY300_QL70_FMwebp_.jpg"
+  },
+  {
+    "id": 55,
+    "price": 877,
+    "name": "BlackberryModel",
+    "manufacturer": "BlackBerry",
+    "rating": 1,
+    "image": "https://ae01.alicdn.com/kf/H921dc18e3f594d77a4893c1482684322o/Original-Blackberry-9700-WCDMA-3G-3-2MP-256MB-RAM-1500mAh-GPS-WIFI-Bluetooth-GPS-Unlocked-Used.jpg_Q90.jpg_.webp"
+  },
+  {
+    "id": 56,
+    "price": 255,
+    "name": "X11",
+    "manufacturer": "Apple",
+    "rating": 5,
+    "image": "https://s13emagst.akamaized.net/products/40685/40684428/images/res_0527b4f237cdaab2544c0f8e58980ac9.jpg"
+  },
+  {
+    "id": 57,
+    "price": 871,
+    "name": "7t",
+    "manufacturer": "OnePlus",
+    "rating": 5,
+    "image": "https://media.router-switch.com/media/catalog/product/cache/b90fceee6a5fa7acd36a04c7b968181c/o/n/oneplus-9-5g.jpg"
+  },
+  {
+    "id": 58,
+    "price": 660,
+    "name": "BlackberryModel",
+    "manufacturer": "BlackBerry",
+    "rating": 1,
+    "image": "https://m.media-amazon.com/images/I/81GwnUe7M3L._AC_SL1500_.jpg"
+  },
+  {
+    "id": 59,
+    "price": 653,
+    "name": "3310",
+    "manufacturer": "Nokia",
+    "rating": 4,
+    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/products/521635-Product-0-I-637570202491673303.jpg?v=1621392189"
+  },
+  {
+    "id": 60,
+    "price": 628,
+    "name": "s10",
+    "manufacturer": "Samsung",
+    "rating": 2,
+    "image": "https://images-na.ssl-images-amazon.com/images/I/61Dy9hZJ4ML.__AC_SX300_SY300_QL70_FMwebp_.jpg"
+  },
+  {
+    "id": 61,
+    "price": 498,
+    "name": "AnotherBlackberry",
+    "manufacturer": "BlackBerry",
+    "rating": 2,
+    "image": "https://m.media-amazon.com/images/I/81GwnUe7M3L._AC_SL1500_.jpg"
+  },
+  {
+    "id": 62,
+    "price": 540,
+    "name": "6t",
+    "manufacturer": "OnePlus",
+    "rating": 3,
+    "image": "https://media.router-switch.com/media/catalog/product/cache/b90fceee6a5fa7acd36a04c7b968181c/o/n/oneplus-9-5g.jpg"
+  },
+  {
+    "id": 63,
+    "price": 887,
+    "name": "6s",
+    "manufacturer": "Apple",
+    "rating": 3,
+    "image": "https://s13emagst.akamaized.net/products/40685/40684428/images/res_0527b4f237cdaab2544c0f8e58980ac9.jpg"
+  },
+  {
+    "id": 64,
+    "price": 987,
+    "name": "X11",
+    "manufacturer": "Apple",
+    "rating": 2,
+    "image": "https://s13emagst.akamaized.net/products/40685/40684428/images/res_0527b4f237cdaab2544c0f8e58980ac9.jpg"
+  },
+  {
+    "id": 65,
+    "price": 937,
+    "name": "X",
+    "manufacturer": "Apple",
+    "rating": 1,
+    "image": "https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/iphone-13-pro-family-hero?wid=940&hei=1112&fmt=png-alpha&.v=1644969385433"
+  },
+  {
+    "id": 66,
+    "price": 272,
+    "name": "7",
+    "manufacturer": "Apple",
+    "rating": 4,
+    "image": "https://s13emagst.akamaized.net/products/40685/40684428/images/res_0527b4f237cdaab2544c0f8e58980ac9.jpg"
+  },
+  {
+    "id": 67,
+    "price": 901,
+    "name": "s10",
+    "manufacturer": "Samsung",
+    "rating": 4,
+    "image": "https://images-na.ssl-images-amazon.com/images/I/61Dy9hZJ4ML.__AC_SX300_SY300_QL70_FMwebp_.jpg"
+  },
+  {
+    "id": 68,
+    "price": 504,
+    "name": "AnotherBlackberry",
+    "manufacturer": "BlackBerry",
+    "rating": 4,
+    "image": "https://m.media-amazon.com/images/I/81GwnUe7M3L._AC_SL1500_.jpg"
+  },
+  {
+    "id": 69,
+    "price": 777,
+    "name": "s10",
+    "manufacturer": "Samsung",
+    "rating": 1,
+    "image": "https://images.samsung.com/is/image/samsung/p6pim/bg/2202/gallery/bg-galaxy-a53-5g-a536-sm-a536blbneue-531386714?$1300_1038_PNG$"
+  },
+  {
+    "id": 70,
+    "price": 328,
+    "name": "6t",
+    "manufacturer": "OnePlus",
+    "rating": 5,
+    "image": "https://media.router-switch.com/media/catalog/product/cache/b90fceee6a5fa7acd36a04c7b968181c/o/n/oneplus-9-5g.jpg"
+  },
+  {
+    "id": 71,
+    "price": 879,
+    "name": "7t",
+    "manufacturer": "OnePlus",
+    "rating": 3,
+    "image": "https://media.router-switch.com/media/catalog/product/cache/b90fceee6a5fa7acd36a04c7b968181c/o/n/oneplus-9-5g.jpg"
+  },
+  {
+    "id": 72,
+    "price": 756,
+    "name": "AnotherBlackberry",
+    "manufacturer": "BlackBerry",
+    "rating": 5,
+    "image": "https://ae01.alicdn.com/kf/H921dc18e3f594d77a4893c1482684322o/Original-Blackberry-9700-WCDMA-3G-3-2MP-256MB-RAM-1500mAh-GPS-WIFI-Bluetooth-GPS-Unlocked-Used.jpg_Q90.jpg_.webp"
+  },
+  {
+    "id": 73,
+    "price": 375,
+    "name": "7t",
+    "manufacturer": "OnePlus",
+    "rating": 4,
+    "image": "https://5.imimg.com/data5/SELLER/Default/2021/6/UZ/SM/XI/18726985/1-m00-25-d4-rb8bwmcruwyarg44aaynxfflaji376-840-840-500x500.png"
+  },
+  {
+    "id": 74,
+    "price": 239,
+    "name": "7t",
+    "manufacturer": "OnePlus",
+    "rating": 3,
+    "image": "https://5.imimg.com/data5/SELLER/Default/2021/6/UZ/SM/XI/18726985/1-m00-25-d4-rb8bwmcruwyarg44aaynxfflaji376-840-840-500x500.png"
+  },
+  {
+    "id": 75,
+    "price": 482,
+    "name": "BlackberryModel",
+    "manufacturer": "BlackBerry",
+    "rating": 4,
+    "image": "https://ae01.alicdn.com/kf/H921dc18e3f594d77a4893c1482684322o/Original-Blackberry-9700-WCDMA-3G-3-2MP-256MB-RAM-1500mAh-GPS-WIFI-Bluetooth-GPS-Unlocked-Used.jpg_Q90.jpg_.webp"
+  },
+  {
+    "id": 76,
+    "price": 203,
+    "name": "AnotherBlackberry",
+    "manufacturer": "BlackBerry",
+    "rating": 1,
+    "image": "https://m.media-amazon.com/images/I/81GwnUe7M3L._AC_SL1500_.jpg"
+  },
+  {
+    "id": 77,
+    "price": 333,
+    "name": "AnotherBlackberry",
+    "manufacturer": "BlackBerry",
+    "rating": 5,
+    "image": "https://ae01.alicdn.com/kf/H921dc18e3f594d77a4893c1482684322o/Original-Blackberry-9700-WCDMA-3G-3-2MP-256MB-RAM-1500mAh-GPS-WIFI-Bluetooth-GPS-Unlocked-Used.jpg_Q90.jpg_.webp"
+  },
+  {
+    "id": 78,
+    "price": 235,
+    "name": "Lumia",
+    "manufacturer": "Nokia",
+    "rating": 4,
+    "image": "https://m.media-amazon.com/images/I/81sQxjJBn1L._AC_SL1500_.jpg"
+  },
+  {
+    "id": 79,
+    "price": 520,
+    "name": "5s",
+    "manufacturer": "Apple",
+    "rating": 4,
+    "image": "https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/iphone-13-pro-family-hero?wid=940&hei=1112&fmt=png-alpha&.v=1644969385433"
+  },
+  {
+    "id": 80,
+    "price": 721,
+    "name": "2200",
+    "manufacturer": "Nokia",
+    "rating": 1,
+    "image": "https://m.media-amazon.com/images/I/81sQxjJBn1L._AC_SL1500_.jpg"
+  },
+  {
+    "id": 81,
+    "price": 798,
+    "name": "5s",
+    "manufacturer": "Apple",
+    "rating": 3,
+    "image": "https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/iphone-13-pro-family-hero?wid=940&hei=1112&fmt=png-alpha&.v=1644969385433"
+  },
+  {
+    "id": 82,
+    "price": 412,
+    "name": "5t",
+    "manufacturer": "OnePlus",
+    "rating": 4,
+    "image": "https://media.router-switch.com/media/catalog/product/cache/b90fceee6a5fa7acd36a04c7b968181c/o/n/oneplus-9-5g.jpg"
+  },
+  {
+    "id": 83,
+    "price": 519,
+    "name": "6s",
+    "manufacturer": "Apple",
+    "rating": 1,
+    "image": "https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/iphone-13-pro-family-hero?wid=940&hei=1112&fmt=png-alpha&.v=1644969385433"
+  },
+  {
+    "id": 84,
+    "price": 274,
+    "name": "2200",
+    "manufacturer": "Nokia",
+    "rating": 2,
+    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/products/521635-Product-0-I-637570202491673303.jpg?v=1621392189"
+  },
+  {
+    "id": 85,
+    "price": 918,
+    "name": "8t",
+    "manufacturer": "OnePlus",
+    "rating": 5,
+    "image": "https://5.imimg.com/data5/SELLER/Default/2021/6/UZ/SM/XI/18726985/1-m00-25-d4-rb8bwmcruwyarg44aaynxfflaji376-840-840-500x500.png"
+  },
+  {
+    "id": 86,
+    "price": 438,
+    "name": "AnotherBlackberry",
+    "manufacturer": "BlackBerry",
+    "rating": 2,
+    "image": "https://m.media-amazon.com/images/I/81GwnUe7M3L._AC_SL1500_.jpg"
+  },
+  {
+    "id": 87,
+    "price": 459,
+    "name": "AnotherBlackberry",
+    "manufacturer": "BlackBerry",
+    "rating": 3,
+    "image": "https://m.media-amazon.com/images/I/81GwnUe7M3L._AC_SL1500_.jpg"
+  },
+  {
+    "id": 88,
+    "price": 306,
+    "name": "Lumia",
+    "manufacturer": "Nokia",
+    "rating": 3,
+    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/products/521635-Product-0-I-637570202491673303.jpg?v=1621392189"
+  },
+  {
+    "id": 89,
+    "price": 404,
+    "name": "s9",
+    "manufacturer": "Samsung",
+    "rating": 3,
+    "image": "https://images.samsung.com/is/image/samsung/p6pim/bg/2202/gallery/bg-galaxy-a53-5g-a536-sm-a536blbneue-531386714?$1300_1038_PNG$"
+  },
+  {
+    "id": 90,
+    "price": 495,
+    "name": "S7",
+    "manufacturer": "Samsung",
+    "rating": 4,
+    "image": "https://images.samsung.com/is/image/samsung/p6pim/bg/2202/gallery/bg-galaxy-a53-5g-a536-sm-a536blbneue-531386714?$1300_1038_PNG$"
+  },
+  {
+    "id": 91,
+    "price": 883,
+    "name": "X",
+    "manufacturer": "Apple",
+    "rating": 5,
+    "image": "https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/iphone-13-pro-family-hero?wid=940&hei=1112&fmt=png-alpha&.v=1644969385433"
+  },
+  {
+    "id": 92,
+    "price": 769,
+    "name": "3310",
+    "manufacturer": "Nokia",
+    "rating": 1,
+    "image": "https://m.media-amazon.com/images/I/81sQxjJBn1L._AC_SL1500_.jpg"
+  },
+  {
+    "id": 93,
+    "price": 709,
+    "name": "3310",
+    "manufacturer": "Nokia",
+    "rating": 3,
+    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/products/521635-Product-0-I-637570202491673303.jpg?v=1621392189"
+  },
+  {
+    "id": 94,
+    "price": 966,
+    "name": "Lumia",
+    "manufacturer": "Nokia",
+    "rating": 5,
+    "image": "https://m.media-amazon.com/images/I/81sQxjJBn1L._AC_SL1500_.jpg"
+  },
+  {
+    "id": 95,
+    "price": 496,
+    "name": "6s",
+    "manufacturer": "Apple",
+    "rating": 3,
+    "image": "https://s13emagst.akamaized.net/products/40685/40684428/images/res_0527b4f237cdaab2544c0f8e58980ac9.jpg"
+  },
+  {
+    "id": 96,
+    "price": 805,
+    "name": "2200",
+    "manufacturer": "Nokia",
+    "rating": 1,
+    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/products/521635-Product-0-I-637570202491673303.jpg?v=1621392189"
+  },
+  {
+    "id": 97,
+    "price": 292,
+    "name": "6t",
+    "manufacturer": "OnePlus",
+    "rating": 5,
+    "image": "https://5.imimg.com/data5/SELLER/Default/2021/6/UZ/SM/XI/18726985/1-m00-25-d4-rb8bwmcruwyarg44aaynxfflaji376-840-840-500x500.png"
+  },
+  {
+    "id": 98,
+    "price": 228,
+    "name": "3310",
+    "manufacturer": "Nokia",
+    "rating": 5,
+    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/products/521635-Product-0-I-637570202491673303.jpg?v=1621392189"
+  },
+  {
+    "id": 99,
+    "price": 830,
+    "name": "5t",
+    "manufacturer": "OnePlus",
+    "rating": 4,
+    "image": "https://media.router-switch.com/media/catalog/product/cache/b90fceee6a5fa7acd36a04c7b968181c/o/n/oneplus-9-5g.jpg"
+  }
+]

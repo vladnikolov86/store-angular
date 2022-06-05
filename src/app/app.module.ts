@@ -24,6 +24,8 @@ import { SellerComponent } from './components/seller/seller.component';
 import { AdminComponent } from './components/admin/admin.component';
 import { CanvasWrapComponent } from './components/shared/canvas-wrap/canvas-wrap.component';
 import { ChartInitializerService } from './services/chart-initializer.service';
+import { ProductItemComponent } from './components/shared/product-item/product-item.component';
+import { FetchProductsService } from './services/fetch-products.service';
 
 @NgModule({
   declarations: [
@@ -33,6 +35,7 @@ import { ChartInitializerService } from './services/chart-initializer.service';
     SellerComponent,
     AdminComponent,
     CanvasWrapComponent,
+    ProductItemComponent,
   ],
   imports: [
     CommonModule,
@@ -45,6 +48,7 @@ import { ChartInitializerService } from './services/chart-initializer.service';
     LoginService,
     NotificationService,
     ChartInitializerService,
+    FetchProductsService
   ],
   bootstrap: [AppComponent],
 })
