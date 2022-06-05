@@ -12,10 +12,11 @@
         </div>
       </div>
       <mat-paginator
-        [disabled]="productEntities.length < 10"
-        [length]="productEntities.length"
+        [disabled]="numberOfItems < 10"
+        [length]="numberOfItems"
         [pageSize]="10"
         [hidePageSize]="true"
+        (page)="handlePage($event)"
         aria-label="Select page"
       >
       </mat-paginator>

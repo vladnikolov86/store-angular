@@ -18,4 +18,35 @@
   display: flex;
   flex-direction: column;
   padding: var(--padding-containers);
+  gap: var(--padding-containers);
+}
+.manufacturer {
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+/deep/ .bar-rating {
+  line-height: 22px;
+}
+/deep/ .br-default {
+  --br-font-size: 22px;
+}
+/deep/ .br-default .br-units {
+  align-items: center;
+}
+/deep/ .br-default .br-unit-inner:before {
+  content: "\2605";
+  color: var(--br-inactive-color);
+  width: 100%;
+}
+/deep/ .br-default .br-active:before {
+  color: var(--br-active-color);
+}
+/deep/ .br-default .br-fraction:after {
+  color: var(--br-active-color);
+  content: "\2605";
+  width: 50%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
 }

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { PageEvent } from '@angular/material/paginator';
 import { MatTabChangeEvent } from '@angular/material/tabs';
 import ProductEntity from 'src/app/entities/Product.entity';
 import { FetchProductsService } from 'src/app/services/fetch-products.service';
@@ -11,6 +12,7 @@ import { FetchProductsService } from 'src/app/services/fetch-products.service';
 export class SellerComponent implements OnInit {
   currentPage = 0;
   pageSize = 10;
+  numberOfItems = 0;
   tabTop = 'Top 10 items sold';
   tabAllProducts = 'All my products';
   tabCurrentIndex = 0;
@@ -35,22 +37,33 @@ export class SellerComponent implements OnInit {
     suffix: 'items sold',
   };
   productEntities: ProductEntity[] = [];
+  allItems: ProductEntity[] = [];
   constructor(private fetchProducts: FetchProductsService) {}
 
   ngOnInit(): void {}
 
+  public handlePage(e: PageEvent) {
+    this.currentPage = e.pageIndex;
+    this.productEntities = this.allItems
+      .slice(
+        this.currentPage * this.pageSize,
+        (this.currentPage + 1) * this.pageSize
+      )
+      .map((item) => new ProductEntity(item));
+
+    console.log(e.pageIndex);
+  }
   tabChanged = (tabChangeEvent: MatTabChangeEvent): void => {
     this.tabCurrentIndex = tabChangeEvent.index;
     if (this.tabCurrentIndex == 1) {
-      this.fetchProducts
-        .getProducts()
-        .subscribe(
-          (data: ProductEntity[]) =>
-            (this.productEntities = data
-              .map((item) => new ProductEntity(item))
-              .slice(this.currentPage, (this.currentPage + 1) * this.pageSize))
-        );
+      this.fetchProducts.getProducts().subscribe((data: ProductEntity[]) => {
+        this.numberOfItems = data.length;
+        this.allItems = data;
+        return (this.productEntities = data.slice(
+          this.currentPage,
+          (this.currentPage + 1) * this.pageSize
+        )).map((item) => new ProductEntity(item));
+      });
     }
   };
-
 }

@@ -7,13 +7,15 @@ import ProductEntity from 'src/app/entities/Product.entity';
   styleUrls: ['./product-item.component.css'],
 })
 export class ProductItemComponent implements OnInit {
+  modelLabel = 'Model: ';
+  manufacturerLabel = 'Manufacturer: ';
   @Input() product: ProductEntity = {
     id: 0,
     manufacturer: '',
     name: '',
     price: 0,
     rating: 0,
-    image:''
+    image: '',
   };
   constructor() {}
 

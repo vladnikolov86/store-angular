@@ -3,9 +3,14 @@
     <img width="100%" height="100%" [src]="product.image" lazy />
   </div>
   <div class="image-description">
-    <div>{{ product.name }}</div>
-    <div>{{ product.manufacturer }}</div>
-    <div>{{ product.rating }}</div>
-    <div>{{ product.price }}</div>
+    <div class="model">{{ modelLabel }} {{ product.name }}</div>
+    <div class="manufacturer">{{ manufacturerLabel }} {{ product.manufacturer }}</div>
+    <bar-rating
+      [readOnly]="true"
+      class="bar-rating"
+      [rate]="product.rating"
+      [max]="5"
+    ></bar-rating>
+    <div>{{ product.price | currency: "USD" }}</div>
   </div>
 </div>
