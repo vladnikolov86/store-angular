@@ -27,6 +27,8 @@ import { ChartInitializerService } from './services/chart-initializer.service';
 import { ProductItemComponent } from './components/shared/product-item/product-item.component';
 import { FetchProductsService } from './services/fetch-products.service';
 import { ProductPopupComponent } from './components/shared/product-popup/product-popup.component';
+import { BuyerComponent } from './components/buyer/buyer.component';
+import { PaginatedTileViewComponent } from './components/shared/paginated-tile-view/paginated-tile-view.component';
 
 @NgModule({
   declarations: [
@@ -38,6 +40,8 @@ import { ProductPopupComponent } from './components/shared/product-popup/product
     CanvasWrapComponent,
     ProductItemComponent,
     ProductPopupComponent,
+    BuyerComponent,
+    PaginatedTileViewComponent,
   ],
   imports: [
     CommonModule,

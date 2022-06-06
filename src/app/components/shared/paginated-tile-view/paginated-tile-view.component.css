@@ -1,0 +1,23 @@
+/deep/ .mat-paginator {
+  margin-top: auto;
+}
+.tile-view-inner {
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+  overflow-y: auto;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: var(--padding-containers);
+  box-sizing: border-box;
+  gap: var(--items-gap);
+}
+.productWrap {
+  height: 20%;
+}
+.tile-view-wrap {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}

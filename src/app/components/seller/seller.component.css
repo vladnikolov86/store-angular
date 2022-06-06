@@ -6,11 +6,7 @@
   height: 400px;
   margin: 5% auto;
 }
-/deep/ .tile-view-wrap {
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-}
+
 :host {
   height: calc(100% - var(--header-height));
 }
@@ -19,22 +15,4 @@
 }
 /deep/ .mat-tab-body-wrapper {
   height: 100%;
-}
-/deep/ .mat-paginator {
-  margin-top: auto;
-}
-/deep/ .tile-view-inner {
-  display: flex;
-  flex-direction: row;
-  height: 100%;
-  overflow-y: auto;
-  width: 100%;
-  flex-wrap: wrap;
-  justify-content: center;
-  padding: var(--padding-containers);
-  box-sizing: border-box;
-  gap: var(--items-gap);
-}
-/deep/ .productWrap {
-  height: 20%;
 }

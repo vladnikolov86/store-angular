@@ -5,22 +5,6 @@
     </div>
   </mat-tab>
   <mat-tab [label]="tabAllProducts">
-    <div class="tile-view-wrap">
-      <div class="tile-view-inner">
-        <div class="productWrap" *ngFor="let product of productEntities">
-          <app-product-item [product]="product"></app-product-item>
-        </div>
-      </div>
-      <mat-paginator
-        [disabled]="numberOfItems < 10"
-        [length]="numberOfItems"
-        [pageIndex]="currentPage"
-        [pageSize]="10"
-        [hidePageSize]="true"
-        (page)="handlePage($event)"
-        aria-label="Select page"
-      >
-      </mat-paginator>
-    </div>
+    <app-paginated-tile-view></app-paginated-tile-view>
   </mat-tab>
 </mat-tab-group>

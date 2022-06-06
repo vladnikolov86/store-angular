@@ -9,10 +9,7 @@ import { FetchProductsService } from 'src/app/services/fetch-products.service';
   templateUrl: './seller.component.html',
   styleUrls: ['./seller.component.css'],
 })
-export class SellerComponent implements OnInit {
-  currentPage = 0;
-  pageSize = 10;
-  numberOfItems = 0;
+export class SellerComponent {
   tabTop = 'Top 10 items sold';
   tabAllProducts = 'All my products';
   tabCurrentIndex = 0;
@@ -36,33 +33,8 @@ export class SellerComponent implements OnInit {
     values: [100, 150, 30, 300, 200, 31, 22, 36, 122, 189],
     suffix: 'items sold',
   };
-  productEntities: ProductEntity[] = [];
-  allItems: ProductEntity[] = [];
-  constructor(private fetchProducts: FetchProductsService) {}
 
-  ngOnInit(): void {}
-
-  public handlePage(e: PageEvent) {
-    this.currentPage = e.pageIndex;
-    this.productEntities = this.allItems
-      .slice(
-        this.currentPage * this.pageSize,
-        (this.currentPage + 1) * this.pageSize
-      )
-      .map((item) => new ProductEntity(item));
-  }
   tabChanged = (tabChangeEvent: MatTabChangeEvent): void => {
     this.tabCurrentIndex = tabChangeEvent.index;
-    if (this.tabCurrentIndex == 1) {
-      this.currentPage = 0;
-      this.fetchProducts.getProducts().subscribe((data: ProductEntity[]) => {
-        this.numberOfItems = data.length;
-        this.allItems = data;
-        return (this.productEntities = data.slice(
-          this.currentPage,
-          (this.currentPage + 1) * this.pageSize
-        )).map((item) => new ProductEntity(item));
-      });
-    }
   };
 }
