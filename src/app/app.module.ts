@@ -26,6 +26,7 @@ import { CanvasWrapComponent } from './components/shared/canvas-wrap/canvas-wrap
 import { ChartInitializerService } from './services/chart-initializer.service';
 import { ProductItemComponent } from './components/shared/product-item/product-item.component';
 import { FetchProductsService } from './services/fetch-products.service';
+import { ProductPopupComponent } from './components/shared/product-popup/product-popup.component';
 
 @NgModule({
   declarations: [
@@ -36,6 +37,7 @@ import { FetchProductsService } from './services/fetch-products.service';
     AdminComponent,
     CanvasWrapComponent,
     ProductItemComponent,
+    ProductPopupComponent,
   ],
   imports: [
     CommonModule,

@@ -1,0 +1,13 @@
+.wrap {
+  display: grid;
+  grid-template-columns: 25% 75%;
+  gap: 15px;
+}
+.description {
+  display: flex;
+  flex-direction: column;
+  gap: var(--padding-containers);
+}
+.bold {
+  font-weight: 600;
+}

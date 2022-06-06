@@ -50,8 +50,6 @@ export class SellerComponent implements OnInit {
         (this.currentPage + 1) * this.pageSize
       )
       .map((item) => new ProductEntity(item));
-
-    console.log(e.pageIndex);
   }
   tabChanged = (tabChangeEvent: MatTabChangeEvent): void => {
     this.tabCurrentIndex = tabChangeEvent.index;

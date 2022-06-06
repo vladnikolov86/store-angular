@@ -1,8 +1,8 @@
-<div class="wrap" (click)="openDialog()">
-  <div class="image-wrap">
+<div class="wrap">
+  <div>
     <img width="100%" height="100%" [src]="product.image" loading="lazy" />
   </div>
-  <div class="image-description">
+  <div class="description">
     <div class="model">{{ modelLabel }} {{ product.name }}</div>
     <div class="manufacturer">
       {{ manufacturerLabel }} {{ product.manufacturer }}
@@ -13,6 +13,10 @@
       [rate]="product.rating"
       [max]="5"
     ></bar-rating>
-    <div>{{ product.price | currency: "USD" }}</div>
+    <div>{{ product.description }}</div>
+    <div class="bold">{{ product.price | currency: "USD" }}</div>
+    <div>
+      {{ manufacturerLabel }}<span class="bold">{{ product.countryOfOrigin }}</span>
+    </div>
   </div>
 </div>

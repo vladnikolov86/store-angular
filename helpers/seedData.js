@@ -9,6 +9,21 @@ const MODELS = {
   Nokia: ["3310", "2200", "Lumia"],
   BlackBerry: ["BlackberryModel", "AnotherBlackberry"],
 };
+const DESCRIPTION = {
+  Samsung:
+    "The Android cell phone is a cell phone running the Android OS. A typical Android cell phone is a smartphone with a touch screen interface, multiple connectivity options, Internet browsing capabilities, support for video playback and a camera",
+  BlackBerry:
+    "BlackBerry, any of a series of wireless handheld communication devices manufactured from 1999 to 2016 by the Canadian company Research in Motion (RIM; BlackBerry from 2013 on) that were among the first popular smartphones. The BlackBerry's roots go back to the RIM 850, a pager created by RIM in 1999.",
+  Apple:
+    "The iPhone is a smartphone made by Apple that combines a computer, iPod, digital camera and cellular phone into one device with a touchscreen interface. The iPhone runs the iOS operating system, and in 2021 when the iPhone 13 was introduced, it offered up to 1 TB of storage and a 12-megapixel camera.",
+    OnePlus:
+    "A China-based manufacturer of Android smartphones. Introduced in 2014, OnePlus models are unlocked Android smartphones with quad-core Snapdragon CPUs and up to 8GB RAM that initially ran the Cyanogen version of Android (Cyanogen was later replaced with the company's own Android-based OxygenOS)",
+  Nokia:
+    "Nokia Corporation is the world's largest manufacturer of mobile phones, serving customers in 130 countries. Nokia is divided into four business groups: Mobile Phones, Multimedia, Enterprise Solutions, and Networks. The Mobile Phones group markets wireless voice and data products in consumer and corporate markets.",
+};
+
+const ORIGIN = ["China", "Taiwan", "USA", "EU"];
+
 const PHOTOS = {
   Samsung: [
     "https://images.samsung.com/is/image/samsung/p6pim/bg/2202/gallery/bg-galaxy-a53-5g-a536-sm-a536blbneue-531386714?$1300_1038_PNG$",
@@ -54,6 +69,8 @@ const seedPhones = () => {
       manufacturer,
       rating: getRandomInt(1, 6),
       image: PHOTOS[manufacturer][getRandomInt(0, PHOTOS[manufacturer].length)],
+      description: DESCRIPTION[manufacturer],
+      countryOfOrigin: ORIGIN[getRandomInt(1, ORIGIN.length)],
     };
     result.push(item);
   }
