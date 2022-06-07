@@ -19,7 +19,6 @@ export class LoginService {
       case UserRoleEnum.BUYER:
       case UserRoleEnum.SELLER:
         this.store.dispatch(changeUserRoleEnum({ role: username }));
-        //set in store
         return true;
     }
     return false;

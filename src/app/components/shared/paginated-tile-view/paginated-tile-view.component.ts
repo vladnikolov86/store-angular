@@ -18,7 +18,6 @@ export class PaginatedTileViewComponent implements OnInit {
   constructor(private fetchProducts: FetchProductsService) {}
 
   ngOnInit(): void {
-    console.log('init')
     this.getData();
   }
 

@@ -26,7 +26,6 @@ export class ProductPopupComponent implements OnInit {
     @Inject(MAT_DIALOG_DATA) public data: ProductEntity
   ) {
     this.product = data;
-    console.log(this.product)
   }
 
   ngOnInit(): void {}

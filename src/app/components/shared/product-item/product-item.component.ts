@@ -25,13 +25,9 @@ export class ProductItemComponent implements OnInit {
   constructor(private dialog: MatDialog) {}
 
   openDialog(): void {
-    const dialogRef = this.dialog.open(ProductPopupComponent, {
+    this.dialog.open(ProductPopupComponent, {
       width: '500px',
       data: this.product,
-    });
-
-    dialogRef.afterClosed().subscribe((result) => {
-      console.log('The dialog was closed');
     });
   }
 

@@ -26,6 +26,15 @@ export class AppComponent {
       switch (state.UserRoleEnum) {
         case UserRoleEnum.SELLER: {
           this.router.navigateByUrl(RoutingEnum.SELLER);
+          break;
+        }
+        case UserRoleEnum.BUYER: {
+          this.router.navigateByUrl(RoutingEnum.BUYER);
+          break;
+        }
+        case UserRoleEnum.ADMIN: {
+          this.router.navigateByUrl(RoutingEnum.ADMIN);
+          break;
         }
       }
     });
