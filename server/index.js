@@ -4,9 +4,9 @@ const port = 4200;
 const path = require("path");
 
 app.use("/", express.static(path.resolve("..", "dist", "task-store")));
-app.all("*", function (req, res, next) {
+app.all("*", (req, res, next) => {
   res.sendFile(path.resolve("..", "dist", "task-store", "index.html"));
 });
-app.listen(port, () => {
-  console.log(`Task store ${port}`);
+app.listen(process.env.SERVER_PORT || 4200, () => {
+  console.log(`Task store running on ${port}`);
 });
