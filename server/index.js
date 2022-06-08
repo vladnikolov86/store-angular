@@ -7,6 +7,7 @@ app.use("/", express.static(path.resolve("..", "dist", "task-store")));
 app.all("*", (req, res, next) => {
   res.sendFile(path.resolve("..", "dist", "task-store", "index.html"));
 });
-app.listen(process.env.SERVER_PORT || 4200, () => {
-  console.log(`Task store running on ${port}`);
+const appPort = process.env.SERVER_PORT || port;
+app.listen(appPort, () => {
+  console.log(`Task store running on ${appPort}`);
 });
